@@ -71,7 +71,16 @@ OpenEmbedded provides a comprehensive set of metadata for a wide variety of arch
 
 The Yocto Project focuses on providing powerful, easy-to-use, interoperable, well-tested tools, metadata, and board support packages (BSPs) for a core set of architectures and specific boards.
 
+OpenEmbedded-Core(oe-core)
+---------------------------
 
+The Yocto Project and OpenEmbedded have agreed to work together and share a common core set of metadata(recipes, classes and associated files): oe-core
+
+What is bitbake
+----------
+bitbake is a core component of the yocto project and poky.  
+It basically performs the same functionality as of make.  
+ 
 
 
  
