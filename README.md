@@ -78,10 +78,19 @@ The Yocto Project and OpenEmbedded have agreed to work together and share a comm
 
 What is bitbake
 ----------
-bitbake is a core component of the yocto project and poky.  
-It basically performs the same functionality as of make.  
- 
+bitbake is a core component of the yocto project and poky  
+It basically performs the same functionality as of make  
+It's a task scheduler that parses python and shell script mixed code  
+when tis code is parsed it generates and run the tasks, which are basically a set of steps ordered according to code's dependencies.   
 
+steps:
+1- fetch the source  
+2- extract the source  
+3- conf the source  
+
+It reads recipes and follows them by fetching packages, building them and incorporating the results into bootable images.  
+
+It keeps track of all tasks being processed in order to ensure completion, maximizing the use of processing resources to reduce build time and being predictable.  
 
  
 
