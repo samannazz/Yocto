@@ -32,7 +32,7 @@ Metadata
 Non yocto: A set of data that describe and gives information about other data  
 
 Yocto world:  
-  Metadata refers to the build indturctions
+  Metadata refers to the build indturctions  
   refers to the commands and data used to indicate what versions of software are used  
   where they are obtained from  
   what are the patches we need to apply  
@@ -41,7 +41,7 @@ Yocto world:
 Metadata for kernel
 --------------------
 
-How to build kernel, have to ise make commands, make conf, make modules install  
+How to build kernel, have to use make commands, make conf, make modules install  
 In kernel metadata, we have to which hardware we have to use, which version of kernel we have to install
 
 Metadata is collection of  
