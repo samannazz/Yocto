@@ -81,9 +81,12 @@ What is bitbake
 bitbake is a core component of the yocto project and poky  
 It basically performs the same functionality as of make  
 It's a task scheduler that parses python and shell script mixed code  
-when tis code is parsed it generates and run the tasks, which are basically a set of steps ordered according to code's dependencies.   
+when this code is parsed it generates and run the tasks, which are basically a set of steps ordered according to code's dependencies.     
 
-steps:
+(bitbkae is a task scheduler it will pass al the meta data which is present and it will generate a set of ordered task, and it will start executing this ordered task, so what it is doing currently is, it parsing all the metadata which is present in the poky, and it is generating a set of ordered task to execute.  
+now question is for what hardware it is generating image -> it will generate initially image for qemu86-64)  
+
+steps:  
 1- fetch the source  
 2- extract the source  
 3- conf the source  
@@ -109,7 +112,25 @@ Freescale MPC8315E-RDB (mpc8315e-rdb)
 Intel x86-based PCs and devices (genericx86 and genericx86-64)
 Ubiquiti Networks EdgeRouter Lite (edgerouter)
 
-Note: To develop on different hardware, you will need to complement Poky with hardware-specific Yocto layers.
+Note: To develop on different hardware, you will need to complement Poky with hardware-specific Yocto layers.  
+
+Others
+--------
+
+meta-poky, which is Poky-specific metadata
+
+Documentation, which contains the Yocto Project source files used to make the set of user manuals.
+
+Conclusion
+-------------
+
+Poky includes 
+	some OE components(oe-core)
+	bitbake
+	demo-BSP's
+	helper scripts to setup environment
+	emulator QEMU to test the image
+
 
  ![poky-reference-distribution](https://user-images.githubusercontent.com/89451747/203954025-4920f117-a683-4bf2-b828-a43622ab8af0.png)
 
